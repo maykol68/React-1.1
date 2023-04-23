@@ -1,9 +1,10 @@
 import './App.css';
 import Menu from './components/Menu/menu.js';
-import Home from './components/home';
+import Home from './components/Home/home';
 import Personajes from './components/personajes';
 import Citas from  './components/citas';
 import Episodios from './components/episodios'; 
+import Footer from './components/footer';
 
 function App() {
   const currentURL =  window.location.pathname
@@ -23,8 +24,11 @@ function App() {
 }
   return (
     <div className="App">
-        <Menu/>      
+        <Menu/>    
+        <main>
         { renderContent ()}
+        </main> 
+        <Footer/>
         
     </div>
   );

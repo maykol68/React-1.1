@@ -1,11 +1,10 @@
 import MenuItem from "../Menuitem/menu-item"
-
+import "./menu.css"
 
 function Menu() {
-    return (
-    <header className="App-header">
+    return ( <header className="menu-wrapper">
         <nav>
-            <ul>
+            <ul className="menu">
                 <MenuItem
                     text="Inicio"
                     link="/"
